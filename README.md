@@ -1,5 +1,7 @@
 # PC-8001 8kB SRAM/MicroSD/RTCボード
 
+## 本基板は、試作して確認中です!
+
 ## 概要
 
 * PC-8001 拡張CPUバスにつながる8kB SRAM、MicroSD、RTC搭載ボードです。
