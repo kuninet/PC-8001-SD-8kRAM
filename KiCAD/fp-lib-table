@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Battery_local)(type KiCad)(uri ${KIPRJMOD}/Battery.pretty)(options "")(descr ""))
+  (lib (name AE)(type KiCad)(uri ${KIPRJMOD}/AE.pretty)(options "")(descr ""))
+)

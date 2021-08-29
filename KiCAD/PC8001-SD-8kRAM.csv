@@ -1,0 +1,43 @@
+BT1,CR2032,Battery_local:BatteryHolder_20mmwide,~
+C1,10u,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,~
+C2,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+C3,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+C4,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+C5,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+C6,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+C7,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+C8,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
+D1,ACCESS LED,LED_THT:LED_D3.0mm,~
+D2,RD4.2,Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal,~
+D3,1N4148,Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal,~
+D4,RAM ON,LED_THT:LED_D3.0mm,~
+J1,PC-8001 ext BUS,Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Horizontal,~
+J2,AE-microSD-LLCNV,AE:AE-microSD-LLCNV,~
+J3,AE-RTC-4543SA-V2,Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical,~
+MH1,MountingHole,MountingHole:MountingHole_3.2mm_M3,~
+MH2,MountingHole,MountingHole:MountingHole_3.2mm_M3,~
+MH3,MountingHole,MountingHole:MountingHole_3.2mm_M3,~
+MH4,MountingHole,MountingHole:MountingHole_3.2mm_M3,~
+Q1,2SC1815,Package_TO_SOT_THT:TO-92_Inline_Wide,https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf
+Q2,2SA1015,Package_TO_SOT_THT:TO-92_Inline_Wide,http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf
+Q3,2N7000,Package_TO_SOT_THT:TO-92_Inline_Wide,https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf
+R1,1k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R2,1k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R3,1.2k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R4,2.2k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R5,22k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R6,4.7k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R7,1k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R8,1M,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+R9,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~
+Reference, Value, Footprint, Datasheet
+RN1,10k,Resistor_THT:R_Array_SIP5,http://www.vishay.com/docs/31509/csc.pdf
+RN2,10k,Resistor_THT:R_Array_SIP5,http://www.vishay.com/docs/31509/csc.pdf
+SW1,RAM SW,AE:SS-22SDP2,~
+U1,74HC04,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,http://www.ti.com/lit/gpn/sn74LS04
+U2,74HC32,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,http://www.ti.com/lit/gpn/sn74LS32
+U3,74HC20,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,http://www.ti.com/lit/gpn/sn74LS20
+U4,74HC32,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,http://www.ti.com/lit/gpn/sn74LS32
+U5,74HC30,Package_DIP:DIP-14_W7.62mm_Socket_LongPads,http://www.ti.com/lit/gpn/sn74LS30
+U6,8255A,Package_DIP:DIP-40_W15.24mm_Socket_LongPads,http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf
+U7,256kRAM,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm,http://www.cypress.com/file/136521/download
