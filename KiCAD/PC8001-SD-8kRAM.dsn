@@ -24,10 +24,10 @@
       (path pcb 0  201000 -160000  101000 -160000  101000 -60000  201000 -60000
             201000 -160000)
     )
-    (keepout "" (polygon F.Cu 0  101000 -160000  101500 -160000  101500 -60000  101000 -60000
-            101000 -160000))
-    (keepout "" (polygon B.Cu 0  101000 -160000  101500 -160000  101500 -60000  101000 -60000
-            101000 -160000))
+    (keepout "" (polygon F.Cu 0  101000 -60000  101500 -60000  101500 -160000  101000 -160000
+            101000 -60000))
+    (keepout "" (polygon B.Cu 0  101000 -60000  101500 -60000  101500 -160000  101000 -160000
+            101000 -60000))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -37,6 +37,9 @@
     )
   )
   (placement
+    (component "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+      (place JP1 134650 -64500 back 180 (PN ROM_JP))
+    )
     (component "AE:AE-microSD-LLCNV"
       (place J2 168900 -156600 front 180 (PN "AE-microSD-LLCNV"))
     )
@@ -83,7 +86,7 @@
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
       (place R9 151900 -122100 front 270 (PN 10k))
       (place R8 163500 -94000 front 180 (PN 1M))
-      (place R7 163000 -137500 front 270 (PN 1k))
+      (place R7 163500 -137500 front 270 (PN 1k))
       (place R6 186750 -121000 front 0 (PN 4.7k))
       (place R5 114250 -111750 front 180 (PN 22k))
       (place R4 114250 -108500 front 180 (PN 2.2k))
@@ -104,8 +107,8 @@
       (place J1 120500 -71000 front 90 (PN "PC-8001 ext BUS"))
     )
     (component LED_THT:LED_D3.0mm
-      (place D4 162000 -153000 front 0 (PN "RAM ON"))
-      (place D1 185210 -130500 front 180 (PN "ACCESS LED"))
+      (place D4 162500 -153000 front 0 (PN "RAM ON"))
+      (place D1 182000 -130500 front 0 (PN "ACCESS LED"))
     )
     (component "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal"
       (place D3 113250 -115000 front 180 (PN 1N4148))
@@ -119,6 +122,18 @@
     )
   )
   (library
+    (image "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+      (outline (path signal 50  1650 -1250  -1650 -1250))
+      (outline (path signal 50  1650 -1250  1650 1250))
+      (outline (path signal 50  -1650 1250  -1650 -1250))
+      (outline (path signal 50  -1650 1250  1650 1250))
+      (outline (path signal 120  -700 1000  700 1000))
+      (outline (path signal 120  1400 300  1400 -300))
+      (outline (path signal 120  700 -1000  -700 -1000))
+      (outline (path signal 120  -1400 -300  -1400 300))
+      (pin Cust[T]Pad_1000x500_1000x_1500_23_um 1 -650 0)
+      (pin Cust[T]Pad_1000x500_1000x_1500_23_um 2 650 0)
+    )
     (image "AE:AE-microSD-LLCNV"
       (outline (path signal 120  1700 -22000  1700 1700))
       (outline (path signal 120  -30100 -22000  1700 -22000))
@@ -1130,6 +1145,23 @@
       (shape (path B.Cu 1700  0 0  0 0))
       (attach off)
     )
+    (padstack Cust[T]Pad_1000x500_1000x_1500_23_um
+      (shape (polygon F.Cu 0  -500 250  -497.592 299.009  -478.47 395.142  -440.961 485.698
+            -386.505 567.197  -317.197 636.505  -235.698 690.961  -145.142 728.47
+            -49.009 747.592  0 750  500 750  500 -750  0 -750  -49.009 -747.592
+            -145.142 -728.47  -235.698 -690.961  -317.197 -636.505  -386.505 -567.197
+            -440.961 -485.698  -478.47 -395.142  -497.592 -299.009  -500 -250
+            -500 250))
+      (attach off)
+    )
+    (padstack Cust[T]Pad_1000x500_1000x_1500_23_um
+      (shape (polygon F.Cu 0  -500 750  0 750  49.009 747.592  145.142 728.47  235.698 690.961
+            317.197 636.505  386.505 567.197  440.961 485.698  478.47 395.142
+            497.592 299.009  500 250  500 -250  497.592 -299.009  478.47 -395.142
+            440.961 -485.698  386.505 -567.197  317.197 -636.505  235.698 -690.961
+            145.142 -728.47  49.009 -747.592  0 -750  -500 -750  -500 750))
+      (attach off)
+    )
     (padstack Rect[A]Pad_2400x1600_um
       (shape (rect F.Cu -1200 -800 1200 800))
       (shape (rect B.Cu -1200 -800 1200 800))
@@ -1272,7 +1304,7 @@
       (pins U7-17 U6-29 J1-13)
     )
     (net /~ROMDS3
-      (pins U4-13 SW1-4 J1-12)
+      (pins JP1-1 J1-12)
     )
     (net /D4
       (pins U7-16 U6-30 J1-11)
@@ -1376,14 +1408,17 @@
     (net "Net-(U4-Pad3)"
       (pins U8-2 U4-3)
     )
+    (net "Net-(JP1-Pad2)"
+      (pins JP1-2 U4-13 SW1-4)
+    )
     (class kicad_default "" /+12V "/-12V" /A0 /A1 /A10 /A11 /A12 /A13 /A14
       /A15 /A2 /A3 /A4 /A5 /A6 /A7 /A8 /A9 /CLK /CMD /CS2 /D0 /D1 /D2 /D3
       /D4 /D5 /D6 /D7 /E2#D0 /E2#D4 /RTC_CE /RTC_CLK /RTC_DIN /RTC_WR /SCLOCK
       /SDCLK /SDCS /SDDAT /~CS1 /~EXTON /~INT /~IORD /~IOREQ /~IOWR /~M1 /~MRD
       /~MREQ /~MUX /~MWR /~NMI /~RAS0 /~RAS1 /~RD /~RESET /~RFSH /~ROMDS0
-      /~ROMDS1 /~ROMDS2 /~ROMDS3 /~VCC_ON /~WAIT /~WE /~WR "Net-(BT1-Pad1)"
-      "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D4-Pad1)" "Net-(D4-Pad2)"
-      "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad9)" "Net-(J3-Pad3)" "Net-(Q1-Pad3)"
+      /~ROMDS1 /~ROMDS2 /~ROMDS3 /~VCC_ON /~WAIT /~WE /~WR "Net-(D1-Pad1)"
+      "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D4-Pad1)" "Net-(D4-Pad2)" "Net-(J2-Pad2)"
+      "Net-(J2-Pad3)" "Net-(J2-Pad9)" "Net-(J3-Pad3)" "Net-(JP1-Pad2)" "Net-(Q1-Pad3)"
       "Net-(Q2-Pad3)" "Net-(Q3-Pad3)" "Net-(RN1-Pad2)" "Net-(RN1-Pad3)" "Net-(RN1-Pad4)"
       "Net-(RN1-Pad5)" "Net-(RN2-Pad5)" "Net-(RN3-Pad4)" "Net-(RN3-Pad5)"
       "Net-(SW1-Pad3)" "Net-(SW1-Pad6)" "Net-(U1-Pad1)" "Net-(U1-Pad10)" "Net-(U1-Pad12)"
@@ -1401,7 +1436,7 @@
         (clearance 200.1)
       )
     )
-    (class BOLD +5V GND VCC
+    (class BOLD +5V GND "Net-(BT1-Pad1)" VCC
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -1412,8 +1447,5 @@
     )
   )
   (wiring
-    (wire (path F.Cu 600  117750 -71000  120500 -71000)(net VCC)(type protect))
-    (wire (path F.Cu 600  116250 -72500  117750 -71000)(net VCC)(type protect))
-    (wire (path F.Cu 600  111500 -72500  116250 -72500)(net VCC)(type protect))
   )
 )

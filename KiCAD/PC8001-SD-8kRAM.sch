@@ -1952,9 +1952,8 @@ $EndComp
 Wire Wire Line
 	6300 5750 6300 5900
 Wire Wire Line
-	6050 5000 6600 5000
-Connection ~ 6600 5000
-Text Label 6050 5000 0    50   ~ 0
+	5700 4750 6050 4750
+Text Label 5700 4750 0    50   ~ 0
 ~ROMDS3
 $Comp
 L Device:LED_ALT D4
@@ -2343,4 +2342,22 @@ F 3 "" H 5800 7150 50  0001 C CNN
 	1    5800 7150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:Jumper_2_Bridged JP1
+U 1 1 613AC2B8
+P 6350 5000
+F 0 "JP1" H 6350 5195 50  0000 C CNN
+F 1 "ROM_JP" H 6350 5104 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6350 5000 50  0001 C CNN
+F 3 "~" H 6350 5000 50  0001 C CNN
+	1    6350 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4750 6050 5000
+Wire Wire Line
+	6050 5000 6150 5000
+Wire Wire Line
+	6550 5000 6600 5000
+Connection ~ 6600 5000
 $EndSCHEMATC

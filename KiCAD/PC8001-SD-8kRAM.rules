@@ -8,10 +8,10 @@
     (autoroute on)
     (postroute on)
     (vias on)
-    (via_costs 50)
+    (via_costs 5)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2107)
+    (start_pass_no 3266)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -69,15 +69,15 @@
     )
   )
   (class "kicad_default"
-    "Net-(BT1-Pad1)" "Net-(D1-Pad2)" "Net-(D1-Pad1)" "Net-(D2-Pad2)" "Net-(D4-Pad2)" "Net-(D4-Pad1)" /~IOREQ /~MREQ
-    /~WR /~RESET /~RD /A15 /A7 /A14 /A6 /A13
-    /A5 /A12 /A4 /A11 /A3 /A10 /A2 /A9
-    /A1 /A8 /A0 /D7 /D6 /D5 /~ROMDS3 /D4
-    /D3 /D2 /D1 /D0 /SDCS /CMD /SDDAT /SDCLK
-    "/RTC_CE" "/RTC_WR" "/RTC_CLK" "/RTC_DIN" "Net-(Q1-Pad3)" "/~VCC_ON" "Net-(Q2-Pad3)" "Net-(Q3-Pad3)"
-    /CS2 "Net-(RN1-Pad3)" "Net-(RN1-Pad2)" "Net-(U1-Pad4)" "Net-(U1-Pad2)" "Net-(U1-Pad1)" /~IOWR /~IORD
-    /~CS1 /~MWR "Net-(U4-Pad2)" /~MRD "Net-(U5-Pad8)" /E2#D0 /E2#D4 "Net-(U4-Pad6)"
-    "Net-(U4-Pad3)"
+    "Net-(D1-Pad2)" "Net-(D1-Pad1)" "Net-(D2-Pad2)" "Net-(D4-Pad2)" "Net-(D4-Pad1)" /~IOREQ /~MREQ /~WR
+    /~RESET /~RD /A15 /A7 /A14 /A6 /A13 /A5
+    /A12 /A4 /A11 /A3 /A10 /A2 /A9 /A1
+    /A8 /A0 /D7 /D6 /D5 /~ROMDS3 /D4 /D3
+    /D2 /D1 /D0 /SDCS /CMD /SDDAT /SDCLK "/RTC_CE"
+    "/RTC_WR" "/RTC_CLK" "/RTC_DIN" "Net-(Q1-Pad3)" "/~VCC_ON" "Net-(Q2-Pad3)" "Net-(Q3-Pad3)" /CS2
+    "Net-(RN1-Pad3)" "Net-(RN1-Pad2)" "Net-(U1-Pad4)" "Net-(U1-Pad2)" "Net-(U1-Pad1)" /~IOWR /~IORD /~CS1
+    /~MWR "Net-(U4-Pad2)" /~MRD "Net-(U5-Pad8)" /E2#D0 /E2#D4 "Net-(U4-Pad6)" "Net-(U4-Pad3)"
+    "Net-(JP1-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -88,7 +88,7 @@
     )
   )
   (class BOLD
-    GND VCC +5V
+    "Net-(BT1-Pad1)" GND VCC +5V
     (clearance_class BOLD)
     (via_rule BOLD)
     (rule
