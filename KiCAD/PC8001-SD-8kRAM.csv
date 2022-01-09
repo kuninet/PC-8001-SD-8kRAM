@@ -8,7 +8,7 @@ C6,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
 C7,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
 C8,0.1u,Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm,~
 D1,ACCESS LED,LED_THT:LED_D3.0mm,~
-D2,RD4.2,Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal,~
+D2,RD3.6,Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal,~
 D3,1N4148,Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal,~
 D4,RAM ON,LED_THT:LED_D3.0mm,~
 J1,PC-8001 ext BUS,Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Horizontal,~

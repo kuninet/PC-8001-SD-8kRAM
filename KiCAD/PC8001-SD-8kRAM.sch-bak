@@ -2343,12 +2343,12 @@ F 3 "" H 5800 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_2_Bridged JP?
+L Jumper:Jumper_2_Bridged JP1
 U 1 1 613AC2B8
 P 6350 5000
-F 0 "JP?" H 6350 5195 50  0000 C CNN
+F 0 "JP1" H 6350 5195 50  0000 C CNN
 F 1 "ROM_JP" H 6350 5104 50  0000 C CNN
-F 2 "" H 6350 5000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6350 5000 50  0001 C CNN
 F 3 "~" H 6350 5000 50  0001 C CNN
 	1    6350 5000
 	1    0    0    -1  
